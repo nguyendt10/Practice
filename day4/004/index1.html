@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box1{
+            background-color: orange;
+            width:100px;
+            height: 100px;
+        /*    thêm padding và border*/
+            padding: 10px 20px;
+            border:10px solid red;
+
+        }
+        #box2{
+            box-sizing: border-box;
+            width:100px;
+            height: 100px;
+            /*    thêm padding và border*/
+            padding: 10px 20px;
+            border:10px solid red;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính box-sizing;
+        lương gross hay lương net
+        *lương gross (tổng lương): bảo hiểm y tế +
+        bảo hiểm thất nghiệp + phu cấp + thuế thu nhập + lương thực nhận+
+        lương net( lương thực nhận)
+
+        thuộc tính box-sizing
+
+        vấn đề khi set rộng và cao cho 1 thẻ
+        ví dụ 100 chiều rộng và 100 chiều cao
+        nhưng khi thêm padding và border
+        thì Chiều rộng thực tế = chiều rộng + padding-left + padding-right + border-left +border-right
+        Chiều cao thực tế = Chiều cao + padding-top + padding-bottom + border-top+border-bottom
+        kích thước của thẻ sẽ vượt quá width và height ban đầu
+        để giải quyết vấn đề người ta sẽ thêm 1 thuộc tính là box-sizing:border-box
+        width và height ban đầu sẽ không bị ảnh hưởng bởi padding và border
+    </pre>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+</body>
+</html>
